@@ -1,5 +1,22 @@
 ## fswatch.c
 
+This is my fork of [fswatch](https://github.com/alandipert/fswatch).
+I wanted to use it as [desribed here](http://blog.daanraman.com/coding/automatically-reload-chrome-when-editing-files-on-osx) to easily reload local web pages.
+
+I looked at other reloaders like LiveReload2 and Tincr but they were overcomplex for what I wanted.  I only need support for Chrome on Mac OSX.
+
+The main change from the original repository is the removal of the 1 second latency (for faster reloads) and the addition of the applescript code along with this documentation.
+
+
+Quick and dirty install/use (only on a mac!):
+
+  git clone git://github.com/pieper/fswatch
+  make
+  ./fswatch /tmp/test "osascript reloadChrome.applescript"
+
+
+Original docs below here...
+
 This is a small program using the Mac OS X FSEvents API to monitor a directory.
 When an event about any change to that directory is received, the specified
 shell command is executed by `/bin/bash`.
