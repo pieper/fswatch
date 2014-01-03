@@ -85,7 +85,7 @@ int main(int argc, char **argv) {
 
   void *callbackInfo = NULL; 
   FSEventStreamRef stream; 
-  CFAbsoluteTime latency = 1.0;
+  CFAbsoluteTime latency = 0;
 
   stream = FSEventStreamCreate(NULL,
     &callback,
