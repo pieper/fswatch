@@ -10,10 +10,11 @@ The main change from the original repository is the removal of the 1 second late
 
 Quick and dirty install/use (only on a mac!):
 
+```
   git clone git://github.com/pieper/fswatch
   make
   ./fswatch /tmp/test "osascript reloadChrome.applescript"
-
+```
 
 Original docs below here...
 
