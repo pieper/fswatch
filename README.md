@@ -17,11 +17,12 @@ Quick and dirty install/use (only on a mac!):
   rm -rf $DIR
   mkdir $DIR
   ./fswatch $DIR "osascript reloadChrome.applescript" &
-  echo "Hello World" > $DIR/world.txt
-  open $DIR/world.txt
+  echo "Hello World" > $DIR/world.html
+  open $DIR/world.html
   sleep 1
   echo updating
-  echo "<p>Hi again" >>$DIR/world.txt
+  echo "<p>Hi again" >>$DIR/world.html
+  
 ```
 
 Original docs below here...
