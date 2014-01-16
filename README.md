@@ -25,7 +25,15 @@ Quick and dirty install/use (only on a mac!):
   
 ```
 
+For use when developing a web site:
+
+```
+fswatch . "echo -n reload... ; ./couchSite.py site; osascript ~/Downloads/fswatch/reloadChrome.applescript; echo done"
+```
+
 Original docs below here...
+===========================
+
 
 This is a small program using the Mac OS X FSEvents API to monitor a directory.
 When an event about any change to that directory is received, the specified
