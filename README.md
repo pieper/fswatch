@@ -25,10 +25,10 @@ Quick and dirty install/use (only on a mac!):
   
 ```
 
-For use when developing a web site:
+For use when developing the Chronicle web app (start from Chronicle directory):
 
 ```
-fswatch . "echo -n reload... ; ./couchSite.py site; osascript ~/Downloads/fswatch/reloadChrome.applescript; echo done"
+$ fswatch . "date; echo -n reload... ; ../couchSite/couchSite.py . chronicle; osascript ~/Downloads/fswatch/reloadChrome.applescript; echo done"
 ```
 
 Original docs below here...
