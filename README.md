@@ -1,7 +1,7 @@
 ## fswatch.c
 
 This is my fork of [fswatch](https://github.com/alandipert/fswatch).
-I wanted to use it as [desribed here](http://blog.daanraman.com/coding/automatically-reload-chrome-when-editing-files-on-osx) to easily reload local web pages.
+I wanted to use it as [described here](http://blog.daanraman.com/coding/automatically-reload-chrome-when-editing-files-on-osx) to easily reload local web pages.
 
 I looked at other reloaders like LiveReload2 and Tincr but they were overcomplex for what I wanted.  I only need support for Chrome on Mac OSX.
 
@@ -25,7 +25,8 @@ Quick and dirty install/use (only on a mac!):
   
 ```
 
-For use when developing the Chronicle web app (start from Chronicle directory):
+For use when developing the [Chronicle web app](https://github.com/pieper/Chronicle)
+(start from Chronicle directory):
 
 ```
 $ fswatch . "date; echo -n reload... ; ../couchSite/couchSite.py . chronicle; osascript ~/Downloads/fswatch/reloadChrome.applescript; echo done"
