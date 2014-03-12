@@ -29,7 +29,10 @@ For use when developing the [Chronicle web app](https://github.com/pieper/Chroni
 (start from Chronicle directory):
 
 ```
-$ fswatch . "date; echo -n reload... ; ../couchSite/couchSite.py . chronicle; osascript ~/Downloads/fswatch/reloadChrome.applescript; echo done"
+
+fswatch . "date; echo -n reload... ; ../couchSite/couchSite.py . chronicle; osascript ~/scripts/reloadChrome.applescript; echo done"
+
+
 ```
 
 Original docs below here...
